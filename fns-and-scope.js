@@ -14,8 +14,8 @@ let isTyler = str => str==="Tyler"?true:false;
 
   //Code Here
 let getName = () => {
-  var name1 = prompt()
-  return name1
+  var user = prompt()
+  return user
 }
 
 
@@ -27,10 +27,10 @@ let getName = () => {
 //then alerts "Welcome, " plus whatever the users name is.
 
   //Code Here
-let welcome = (str,cb) =>{
-  cb(str);
-  alert("Welcome, " + str);
-}
+  let welcome = () =>{
+    //var user2 = cb();
+    alert(`Welcome, ${getName()}`)
+  }
 
 
 
@@ -64,7 +64,7 @@ let welcome = (str,cb) =>{
 //Create a function called myName that returns your name
 
   //Code Here
-let myName = str => str
+let myName = () => "Brett"
 
   
 
@@ -75,7 +75,7 @@ let myName = str => str
 var newMyName = myName
 
 //Now alert the result of invoking newMyName
-alert(newMyName)
+alert(newMyName())
 
 
 //////////////////PROBLEM 7////////////////////
@@ -85,14 +85,15 @@ alert(newMyName)
 //Create a function called outerFn which returns an anonymous function which returns your name.
 
   //Code Here
-let outerFn = (str,cb) => {
-  return cb(str);
+let outerFn = () => {
+  return function(){
+    return "Brett"}
 }
 
 
 //Now save the result of invoking outerFn into a variable called innerFn.
 
   //Code Here
-  var innerFn = outerFn();
+ var innerFn = outerFn();
 
 //Now invoke innerFn.
