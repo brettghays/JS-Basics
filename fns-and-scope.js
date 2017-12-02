@@ -29,8 +29,9 @@ let getName = () => {
   //Code Here
 let welcome = (str,cb) =>{
   cb(str);
-  alert("Welcome, " + cb);
+  alert("Welcome, " + str);
 }
+
 
 
 //////////////////PROBLEM 4////////////////////
@@ -64,6 +65,7 @@ let welcome = (str,cb) =>{
 
   //Code Here
 let myName = str => str
+
   
 
 
@@ -83,11 +85,14 @@ alert(newMyName)
 //Create a function called outerFn which returns an anonymous function which returns your name.
 
   //Code Here
-let outerFn = (str,cb) => cb();
+let outerFn = (str,cb) => {
+  return cb(str);
+}
 
 
 //Now save the result of invoking outerFn into a variable called innerFn.
 
   //Code Here
+  var innerFn = outerFn();
 
 //Now invoke innerFn.
