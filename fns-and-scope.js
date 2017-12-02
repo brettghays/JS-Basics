@@ -5,7 +5,7 @@ var name = 'Tyler';
 //If the argument you passed in is equal to 'Tyler', return true. If it's not, return false.
 
   //Code Here
-
+let isTyler = str => str==="Tyler"?true:false;
 //////////////////PROBLEM 2////////////////////
 
 
@@ -13,6 +13,10 @@ var name = 'Tyler';
 
 
   //Code Here
+let getName = str => {
+  var name1 = prompt()
+  return name1
+}
 
 
 //////////////////PROBLEM 3////////////////////
@@ -23,6 +27,9 @@ var name = 'Tyler';
 //then alerts "Welcome, " plus whatever the users name is.
 
   //Code Here
+let welcome = (cb) =>
+  cb();
+  alert(`Welcome, ${name1}`)
 
 
 //////////////////PROBLEM 4////////////////////
