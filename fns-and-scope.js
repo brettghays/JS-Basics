@@ -13,7 +13,7 @@ let isTyler = str => str==="Tyler"?true:false;
 
 
   //Code Here
-let getName = str => {
+let getName = () => {
   var name1 = prompt()
   return name1
 }
@@ -41,7 +41,7 @@ let welcome = (str,cb) =>{
 //What is the difference between arguments and parameters?
 
   //Answer Here
-  Parameters define a function and are more general. Arguments are used to invoke a function with specific values.
+  /*Parameters define a function and are more general. Arguments are used to invoke a function with specific values.*/
 
 
 //////////////////PROBLEM 5////////////////////
@@ -52,7 +52,7 @@ let welcome = (str,cb) =>{
 
 
   //Answer Here
-False, 0 or zero, Empty Strings ('' or ""), null, undefined, NaN
+//False, 0 or zero, Empty Strings ('' or ""), null, undefined, NaN
 
 
 
@@ -63,15 +63,17 @@ False, 0 or zero, Empty Strings ('' or ""), null, undefined, NaN
 //Create a function called myName that returns your name
 
   //Code Here
+let myName = str => str
   
 
 
 //Now save the function definition of myName into a new variable called newMyName
 
   //Code Here
+var newMyName = myName
 
 //Now alert the result of invoking newMyName
-
+alert(newMyName)
 
 
 //////////////////PROBLEM 7////////////////////
@@ -81,6 +83,8 @@ False, 0 or zero, Empty Strings ('' or ""), null, undefined, NaN
 //Create a function called outerFn which returns an anonymous function which returns your name.
 
   //Code Here
+let outerFn = (str,cb) => cb();
+
 
 //Now save the result of invoking outerFn into a variable called innerFn.
 
