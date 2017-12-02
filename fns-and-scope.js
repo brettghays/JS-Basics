@@ -27,9 +27,10 @@ let getName = str => {
 //then alerts "Welcome, " plus whatever the users name is.
 
   //Code Here
-let welcome = (cb) =>
-  cb();
-  alert(`Welcome, ${name1}`)
+let welcome = (str,cb) =>{
+  cb(str);
+  alert("Welcome, " + cb);
+}
 
 
 //////////////////PROBLEM 4////////////////////
@@ -40,6 +41,7 @@ let welcome = (cb) =>
 //What is the difference between arguments and parameters?
 
   //Answer Here
+  Parameters define a function and are more general. Arguments are used to invoke a function with specific values.
 
 
 //////////////////PROBLEM 5////////////////////
@@ -50,6 +52,7 @@ let welcome = (cb) =>
 
 
   //Answer Here
+False, 0 or zero, Empty Strings ('' or ""), null, undefined, NaN
 
 
 
