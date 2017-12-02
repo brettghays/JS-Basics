@@ -28,8 +28,8 @@ let getName = () => {
 
   //Code Here
   let welcome = () =>{
-    //var user2 = cb();
-    alert(`Welcome, ${getName()}`)
+    var user2 = cb();
+    alert(`Welcome, ${user2}`)
   }
 
 
